@@ -1,3 +1,3 @@
-# sturdy-octo-adventure
+
 Tic-tac-toe game using java on eclipse platform, which will improve your coding skills and your problem-solving tactics. Moreover, you will be able to create classes, define the object-oriented concept, identify the importance of methods and be able to use them, and lastly you will be able to use loops to your advantage. You will create a game from scratch. The game will be a player against the program created using the console log for input & output. you enter a letter between a-i for position in table and wait for computers move.
 Java is the base and most popular coding language for you to enter the programming world. The project will teach you basic programming fundamentals and will open the door for you to create rich cross-platform applications.
