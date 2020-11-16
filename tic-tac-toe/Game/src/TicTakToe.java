@@ -1,9 +1,8 @@
 import java.util.Scanner;
-import java.util.Random;
 
 public class TicTakToe {
 	
-	public static void Grid(String[][] table) {
+	public static void grid(String[][] table) {
 		for(int x=0; x<3;x++){
 			for(int y=0; y <3;y++){
 				System.out.print("  ");
@@ -98,28 +97,8 @@ public class TicTakToe {
 		boolean result = false;
 		for(int j=0; j<4; j++){
 			player(table);
-			Grid(table);
+			grid(table);
 			if(table[0][0].equals("x") && table[0][1].equals("x") && table[0][2].equals("x")){
-				System.out.println("You Win!");
-				result = true;
-				break;
-			}
-			if(table[0][0].equals("x") && table[1][0].equals("x") && table[2][0].equals("x")){
-				System.out.println("You Win!");
-				result = true;
-				break;
-			}
-			if(table[0][2].equals("x") && table[1][2].equals("x") && table[2][2].equals("x")){
-				System.out.println("You Win!");
-				result = true;
-				break;
-			}
-			if(table[2][0].equals("x") && table[2][1].equals("x") && table[2][2].equals("x")){
-				System.out.println("You Win!");
-				result = true;
-				break;
-			}
-			if(table[0][0].equals("x") && table[1][1].equals("x") && table[2][2].equals("x")){
 				System.out.println("You Win!");
 				result = true;
 				break;
@@ -129,7 +108,32 @@ public class TicTakToe {
 				result = true;
 				break;
 			}
+			if(table[2][0].equals("x") && table[2][1].equals("x") && table[2][2].equals("x")){
+				System.out.println("You Win!");
+				result = true;
+				break;
+			}
+			if(table[0][0].equals("x") && table[1][0].equals("x") && table[2][0].equals("x")){
+				System.out.println("You Win!");
+				result = true;
+				break;
+			}
 			if(table[0][1].equals("x") && table[1][1].equals("x") && table[2][1].equals("x")){
+				System.out.println("You Win!");
+				result = true;
+				break;
+			}
+			if(table[0][2].equals("x") && table[1][2].equals("x") && table[2][2].equals("x")){
+				System.out.println("You Win!");
+				result = true;
+				break;
+			}
+			if(table[0][0].equals("x") && table[1][1].equals("x") && table[2][2].equals("x")){
+				System.out.println("You Win!");
+				result = true;
+				break;
+			}
+			if(table[0][2].equals("x") && table[1][1].equals("x") && table[2][0].equals("x")){
 				System.out.println("You Win!");
 				result = true;
 				break;
@@ -137,28 +141,8 @@ public class TicTakToe {
 			
 			System.out.println("Computer's turn");
 			computer(table);
-			Grid(table);
+			grid(table);
 			if(table[0][0].equals("o") && table[0][1].equals("o") && table[0][2].equals("o")){
-				System.out.println("You Lose");
-				result = true;
-				break;
-			}
-			if(table[0][0].equals("o") && table[1][0].equals("o") && table[2][0].equals("o")){
-				System.out.println("You Lose");
-				result = true;
-				break;
-			}
-			if(table[0][2].equals("o") && table[1][2].equals("o") && table[2][2].equals("o")){
-				System.out.println("You Lose");
-				result = true;
-				break;
-			}
-			if(table[2][0].equals("o") && table[2][1].equals("o") && table[2][2].equals("o")){
-				System.out.println("You Lose");
-				result = true;
-				break;
-			}
-			if(table[0][0].equals("o") && table[1][1].equals("o") && table[2][2].equals("o")){
 				System.out.println("You Lose");
 				result = true;
 				break;
@@ -168,7 +152,32 @@ public class TicTakToe {
 				result = true;
 				break;
 			}
+			if(table[2][0].equals("o") && table[2][1].equals("o") && table[2][2].equals("o")){
+				System.out.println("You Lose");
+				result = true;
+				break;
+			}
+			if(table[0][0].equals("o") && table[1][0].equals("o") && table[2][0].equals("o")){
+				System.out.println("You Lose");
+				result = true;
+				break;
+			}
 			if(table[0][1].equals("o") && table[1][1].equals("o") && table[2][1].equals("o")){
+				System.out.println("You Lose");
+				result = true;
+				break;
+			}
+			if(table[0][2].equals("o") && table[1][2].equals("o") && table[2][2].equals("o")){
+				System.out.println("You Lose");
+				result = true;
+				break;
+			}
+			if(table[0][0].equals("o") && table[1][1].equals("o") && table[2][2].equals("o")){
+				System.out.println("You Lose");
+				result = true;
+				break;
+			}
+			if(table[0][2].equals("o") && table[1][1].equals("o") && table[2][0].equals("o")){
 				System.out.println("You Lose");
 				result = true;
 				break;
@@ -176,24 +185,8 @@ public class TicTakToe {
 		}
 		if(result == false){
 			player(table);
-			Grid(table);
+			grid(table);
 			if(table[0][0].equals("x") && table[0][1].equals("x") && table[0][2].equals("x")){
-				System.out.println("You Win!");
-				result = true;
-			}
-			if(table[0][0].equals("x") && table[1][0].equals("x") && table[2][0].equals("x")){
-				System.out.println("You Win!");
-				result = true;
-			}
-			if(table[0][2].equals("x") && table[1][2].equals("x") && table[2][2].equals("x")){
-				System.out.println("You Win!");
-				result = true;
-			}
-			if(table[2][0].equals("x") && table[2][1].equals("x") && table[2][2].equals("x")){
-				System.out.println("You Win!");
-				result = true;
-			}
-			if(table[0][0].equals("x") && table[1][1].equals("x") && table[2][2].equals("x")){
 				System.out.println("You Win!");
 				result = true;
 			}
@@ -201,7 +194,27 @@ public class TicTakToe {
 				System.out.println("You Win!");
 				result = true;
 			}
+			if(table[2][0].equals("x") && table[2][1].equals("x") && table[2][2].equals("x")){
+				System.out.println("You Win!");
+				result = true;
+			}
+			if(table[0][0].equals("x") && table[1][0].equals("x") && table[2][0].equals("x")){
+				System.out.println("You Win!");
+				result = true;
+			}
 			if(table[0][1].equals("x") && table[1][1].equals("x") && table[2][1].equals("x")){
+				System.out.println("You Win!");
+				result = true;
+			}
+			if(table[0][2].equals("x") && table[1][2].equals("x") && table[2][2].equals("x")){
+				System.out.println("You Win!");
+				result = true;
+			}
+			if(table[0][0].equals("x") && table[1][1].equals("x") && table[2][2].equals("x")){
+				System.out.println("You Win!");
+				result = true;
+			}
+			if(table[0][2].equals("x") && table[1][1].equals("x") && table[2][0].equals("x")){
 				System.out.println("You Win!");
 				result = true;
 			}
@@ -218,7 +231,7 @@ public class TicTakToe {
 		        table[i][j] = " ";
 		      }
 		    }
-		Grid(table);
+		grid(table);
 		game(table);	
 	}
 }
